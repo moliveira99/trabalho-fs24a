@@ -33,7 +33,7 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/moliveira99/trabalho-fs24a.git
     cd seu-repositorio
     ```
 
