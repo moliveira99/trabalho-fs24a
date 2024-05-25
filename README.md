@@ -132,7 +132,7 @@ Sinta-se à vontade para abrir issues e pull requests para contribuir com este p
 
 ## Autores
 
-- [Seu Nome](https://github.com/seu-usuario)
+- [Nosso Nome](https://github.com/seu-usuario)
 
 ## Licença
 
