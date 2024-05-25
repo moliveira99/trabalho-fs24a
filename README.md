@@ -1,4 +1,5 @@
 
+
 # Projeto Node.js: CRUD de Usuários e Tarefas com Permissões
 
 Este projeto envolve a criação de um backend para gerenciar usuários e tarefas com operações CRUD e um sistema de permissões utilizando JWT para autenticação e autorização.
@@ -6,21 +7,23 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
 ## Funcionalidades
 
 1. **CRUD de Usuários**:
-    - Criar: Endpoint para adicionar novos usuários.
-    - Ler: Endpoint para listar e obter detalhes de usuários.
-    - Atualizar: Endpoint para atualizar informações de usuários.
-    - Deletar: Endpoint para remover usuários.
+
+   - Criar: Endpoint para adicionar novos usuários.
+   - Ler: Endpoint para listar e obter detalhes de usuários.
+   - Atualizar: Endpoint para atualizar informações de usuários.
+   - Deletar: Endpoint para remover usuários.
 
 2. **CRUD de Tarefas**:
-    - Criar: Endpoint para adicionar novas tarefas.
-    - Ler: Endpoint para listar e obter detalhes de tarefas.
-    - Atualizar: Endpoint para atualizar informações de tarefas.
-    - Deletar: Endpoint para remover tarefas.
+
+   - Criar: Endpoint para adicionar novas tarefas.
+   - Ler: Endpoint para listar e obter detalhes de tarefas.
+   - Atualizar: Endpoint para atualizar informações de tarefas.
+   - Deletar: Endpoint para remover tarefas.
 
 3. **Sistema de Permissões**:
-    - Implementar autenticação e autorização usando JWT.
-    - Usuários têm diferentes papéis (e.g., ADMIN, USER).
-    - Restringir acesso a determinadas ações com base no papel do usuário.
+   - Implementar autenticação e autorização usando JWT.
+   - Usuários têm diferentes papéis (e.g., ADMIN, USER).
+   - Restringir acesso a determinadas ações com base no papel do usuário.
 
 ## Pré-requisitos
 
@@ -30,47 +33,53 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
 ## Instalação
 
 1. Clone o repositório:
-    ```bash
-    git clone https://github.com/moliveira99/trabalho-fs24a.git
-    cd seu-repositorio
-    ```
+
+   ```bash
+   git clone https://github.com/moliveira99/trabalho-fs24a.git
+   cd seu-repositorio
+   ```
 
 2. Instale as dependências:
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 3. Configure o arquivo `.env`:
-    Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis de ambiente:
-    ```env
-    PORT=4000
-    MONGO_URI=mongodb://localhost:27017/nome_do_seu_banco_de_dados
-    JWT_SECRET=seu_segredo_jwt
-    ```
+   Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis de ambiente:
+
+   ```env
+   PORT=4000
+   MONGO_URI=mongodb://localhost:27017/nome_do_seu_banco_de_dados
+   JWT_SECRET=seu_segredo_jwt
+   ```
 
 4. Crie o banco de dados MongoDB:
-    - Inicie o MongoDB:
-        ```bash
-        sudo service mongod start
-        ```
-    - Acesse o shell do MongoDB:
-        ```bash
-        mongo
-        ```
-    - Crie o banco de dados:
-        ```javascript
-        use nome_do_seu_banco_de_dados
-        ```
+
+   - Inicie o MongoDB:
+     ```bash
+     sudo service mongod start
+     ```
+   - Acesse o shell do MongoDB:
+     ```bash
+     mongo
+     ```
+   - Crie o banco de dados:
+     ```javascript
+     use nome_do_seu_banco_de_dados
+     ```
 
 5. Inicie o servidor:
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 
 ## Você pode testar o seu CRUD de usuários utilizando um cliente HTTP, como o Postman ou o Insomnia. Vou explicar como você pode realizar cada operação CRUD:
 
 6. **Criar um Novo Usuário (Create)**:
+
    - Faça uma requisição HTTP POST para a rota correspondente à criação de usuários (`/api/users`), enviando os dados do usuário no corpo da requisição no formato JSON. Por exemplo:
+
      ```
      POST http://localhost:4000/api/users
      Content-Type: application/json
@@ -82,21 +91,25 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
          "papel": "USER"
      }
      ```
-   
+
 7. **Listar Todos os Usuários (Read)**:
+
    - Faça uma requisição HTTP GET para a rota correspondente à obtenção de todos os usuários (`/api/users`). Por exemplo:
      ```
      GET http://localhost:4000/api/users
      ```
 
 8. **Obter Detalhes de um Usuário por ID (Read)**:
+
    - Faça uma requisição HTTP GET para a rota correspondente à obtenção de detalhes de um usuário específico (`/api/users/:id`), substituindo `:id` pelo ID do usuário desejado. Por exemplo:
      ```
      GET http://localhost:4000/api/users/5f87753d9d65e61610b8b870
      ```
 
 9. **Atualizar Informações de um Usuário por ID (Update)**:
+
    - Faça uma requisição HTTP PUT para a rota correspondente à atualização de um usuário específico (`/api/users/:id`), substituindo `:id` pelo ID do usuário que deseja atualizar, e enviando os dados atualizados no corpo da requisição no formato JSON. Por exemplo:
+
      ```
      PUT http://localhost:4000/api/users/5f87753d9d65e61610b8b870
      Content-Type: application/json
@@ -109,10 +122,11 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
      ```
 
 10. **Remover um Usuário por ID (Delete)**:
-   - Faça uma requisição HTTP DELETE para a rota correspondente à remoção de um usuário específico (`/api/users/:id`), substituindo `:id` pelo ID do usuário que deseja remover. Por exemplo:
-     ```
-     DELETE http://localhost:4000/api/users/5f87753d9d65e61610b8b870
-     ```
+
+- Faça uma requisição HTTP DELETE para a rota correspondente à remoção de um usuário específico (`/api/users/:id`), substituindo `:id` pelo ID do usuário que deseja remover. Por exemplo:
+  ```
+  DELETE http://localhost:4000/api/users/5f87753d9d65e61610b8b870
+  ```
 
 Certifique-se de ajustar as URLs e os dados enviados conforme necessário para corresponder à configuração específica da sua aplicação. E lembre-se de verificar os retornos das requisições para garantir que as operações CRUD estejam funcionando conforme esperado.
 
@@ -143,6 +157,7 @@ projeto/
 ├── package.json
 └── README.md
 ```
+````
 
 ## Rotas da API
 
@@ -193,4 +208,7 @@ Sinta-se à vontade para abrir issues e pull requests para contribuir com este p
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+```
+
 ```
