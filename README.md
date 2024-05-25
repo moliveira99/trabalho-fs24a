@@ -190,5 +190,3 @@ Sinta-se à vontade para abrir issues e pull requests para contribuir com este p
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 ```
-
-Este README.md agora inclui instruções sobre como criar e iniciar o banco de dados MongoDB. Adapte as instruções conforme necessário para se adequar aos detalhes específicos do seu ambiente e projeto.
