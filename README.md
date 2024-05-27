@@ -115,7 +115,7 @@ Certifique-se de ajustar as URLs e os dados enviados conforme necessário para c
 ## Estrutura do Projeto
 
 ```plaintext
-projeto/
+Atarefado/
 ├── controllers/
 │   ├── AuthController.js
 │   ├── TaskController.js
