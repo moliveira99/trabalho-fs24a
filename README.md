@@ -1,60 +1,39 @@
 
 
-# Projeto Node.js: CRUD de Usuários e Tarefas com Permissões
+# 📚Atarefado
 
 Este projeto envolve a criação de um backend para gerenciar usuários e tarefas com operações CRUD e um sistema de permissões utilizando JWT para autenticação e autorização.
 
-## Funcionalidades
+# ✅Pré-requisitos
+- [Node.js](https://nodejs.org/en)
+- [MongoDB](https://www.mongodb.com/)
 
-1. **CRUD de Usuários**:
+# 💾Instalação
 
-   - Criar: Endpoint para adicionar novos usuários.
-   - Ler: Endpoint para listar e obter detalhes de usuários.
-   - Atualizar: Endpoint para atualizar informações de usuários.
-   - Deletar: Endpoint para remover usuários.
-
-2. **CRUD de Tarefas**:
-
-   - Criar: Endpoint para adicionar novas tarefas.
-   - Ler: Endpoint para listar e obter detalhes de tarefas.
-   - Atualizar: Endpoint para atualizar informações de tarefas.
-   - Deletar: Endpoint para remover tarefas.
-
-3. **Sistema de Permissões**:
-   - Implementar autenticação e autorização usando JWT.
-   - Usuários têm diferentes papéis (e.g., ADMIN, USER).
-   - Restringir acesso a determinadas ações com base no papel do usuário.
-
-## Pré-requisitos
-
-- Node.js
-- MongoDB
-
-## Instalação
-
-1. Clone o repositório:
+**1. Clone o repositório:**
 
    ```bash
    git clone https://github.com/moliveira99/trabalho-fs24a.git
-   cd seu-repositorio
+   cd trabalho-fs24a
    ```
 
-2. Instale as dependências:
+**2. Instale as dependências:**
 
    ```bash
    npm install
    ```
 
-3. Configure o arquivo `.env`:
-   Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis de ambiente:
+**3. Crie um arquivo `.env` na raiz do projeto.**
+
+**4. Adicione as seguintes variáveis de ambiente:**
 
    ```env
    PORT=4000
    MONGO_URI=mongodb://localhost:27017/nome_do_seu_banco_de_dados
-   JWT_SECRET=seu_segredo_jwt
+   JWT_SECRET=códigoSecretoJWT
    ```
 
-4. Crie o banco de dados MongoDB:
+**5. Crie o banco de dados MongoDB:**
 
    - Inicie o MongoDB:
      ```bash
@@ -69,14 +48,16 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
      use nome_do_seu_banco_de_dados
      ```
 
-5. Inicie o servidor:
+**5. Inicie o servidor:**
    ```bash
    npm run dev
    ```
 
-## Você pode testar o seu CRUD de usuários utilizando um cliente HTTP, como o Postman ou o Insomnia. Vou explicar como você pode realizar cada operação CRUD:
+*Você pode testar o seu CRUD de usuários utilizando um cliente HTTP, como Postman ou Insomnia.*
 
-6. **Criar um Novo Usuário (Create)**:
+# 📖Como Usar
+
+1. **Criar um Novo Usuário (Create)**:
 
    - Faça uma requisição HTTP POST para a rota correspondente à criação de usuários (`/api/users`), enviando os dados do usuário no corpo da requisição no formato JSON. Por exemplo:
 
@@ -92,21 +73,21 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
      }
      ```
 
-7. **Listar Todos os Usuários (Read)**:
+2. **Listar Todos os Usuários (Read)**:
 
    - Faça uma requisição HTTP GET para a rota correspondente à obtenção de todos os usuários (`/api/users`). Por exemplo:
      ```
      GET http://localhost:4000/api/users
      ```
 
-8. **Obter Detalhes de um Usuário por ID (Read)**:
+3. **Obter Detalhes de um Usuário por ID (Read)**:
 
    - Faça uma requisição HTTP GET para a rota correspondente à obtenção de detalhes de um usuário específico (`/api/users/:id`), substituindo `:id` pelo ID do usuário desejado. Por exemplo:
      ```
      GET http://localhost:4000/api/users/5f87753d9d65e61610b8b870
      ```
 
-9. **Atualizar Informações de um Usuário por ID (Update)**:
+4. **Atualizar Informações de um Usuário por ID (Update)**:
 
    - Faça uma requisição HTTP PUT para a rota correspondente à atualização de um usuário específico (`/api/users/:id`), substituindo `:id` pelo ID do usuário que deseja atualizar, e enviando os dados atualizados no corpo da requisição no formato JSON. Por exemplo:
 
@@ -121,7 +102,7 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
      }
      ```
 
-10. **Remover um Usuário por ID (Delete)**:
+5. **Remover um Usuário por ID (Delete)**:
 
 - Faça uma requisição HTTP DELETE para a rota correspondente à remoção de um usuário específico (`/api/users/:id`), substituindo `:id` pelo ID do usuário que deseja remover. Por exemplo:
   ```
