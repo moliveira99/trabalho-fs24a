@@ -2,7 +2,7 @@
 
 # 📚Atarefado
 
-Este projeto envolve a criação de um backend para gerenciar usuários e tarefas com operações CRUD e um sistema de permissões utilizando JWT para autenticação e autorização.
+Este projeto envolve a criação de um backend para gerenciar usuários e tarefas com operações CRUD e um sistema de permissões utilizando [JWT](https://jwt.io/) para autenticação e autorização.
 
 # ✅Pré-requisitos
 - [Node.js](https://nodejs.org/en)
