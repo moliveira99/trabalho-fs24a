@@ -1,6 +1,5 @@
-Claro! Vou adicionar uma seção ao README.md sobre como configurar o banco de dados MongoDB.
 
-````markdown
+
 # Projeto Node.js: CRUD de Usuários e Tarefas com Permissões
 
 Este projeto envolve a criação de um backend para gerenciar usuários e tarefas com operações CRUD e um sistema de permissões utilizando JWT para autenticação e autorização.
@@ -131,7 +130,6 @@ Este projeto envolve a criação de um backend para gerenciar usuários e tarefa
 
 Certifique-se de ajustar as URLs e os dados enviados conforme necessário para corresponder à configuração específica da sua aplicação. E lembre-se de verificar os retornos das requisições para garantir que as operações CRUD estejam funcionando conforme esperado.
 
-Se precisar de mais alguma orientação ou tiver alguma dúvida durante o processo de teste, estou aqui para ajudar!
 
 ## Estrutura do Projeto
 
@@ -162,6 +160,14 @@ projeto/
 ````
 
 ## Rotas da API
+
+```
+router.post('/', UserController.createUser);
+router.get('/', UserController.getAllUsers);
+router.get('/:id', UserController.getUserById);
+router.put('/:id', UserController.updateUser);
+router.delete('/:id', UserController.deleteUser);
+```
 
 ### Autenticação
 
