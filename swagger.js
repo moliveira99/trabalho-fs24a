@@ -5,7 +5,7 @@ const doc = {
         title: 'Api Digital Talk',
         description: 'Atividade proposta',
     },
-    host: 'localhost:5000',
+    host: 'localhost:4000',
     schemes: ['http']
 };
 
